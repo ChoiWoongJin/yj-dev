@@ -1,0 +1,16 @@
+type Person {
+    id:Int!
+    name: String!
+    age: Int!
+    gender: String!
+}
+
+type Test {
+    id:String!
+    pw:String!
+    name:String!
+}
+
+type Queries{
+    getDbPeople: [Test]
+}

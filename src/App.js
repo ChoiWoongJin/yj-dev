@@ -2,6 +2,18 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { ApolloProvider } from '@apollo/react-hooks';
+import ApolloClient from 'apollo-client';
+import { InMemoryCache } from "apollo-cache-inmemory";
+import { createHttpLink } from "apollo-link-http";
+
+import Queries from './Queries'
+
+const client = new ApolloClient({
+  link: createHttpLink({ uri: "https://localhost:4000" }),
+  cache: new InMemoryCache()
+});
+
 class App extends Component {
   render() {
     return (
@@ -19,6 +31,10 @@ class App extends Component {
           >
             Learn React
           </a>
+          <ApolloProvider client={client}>
+            <h1>React + Apollo Hooks</h1>
+            <Queries />
+          </ApolloProvider>
         </header>
       </div>
     );
