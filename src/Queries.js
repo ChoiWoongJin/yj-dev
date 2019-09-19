@@ -4,7 +4,7 @@ import { useQuery } from '@apollo/react-hooks';
 
 const GET_QUERIES = gql`
   query {
-    uqeries {
+    queries {
       id
       pw
       name
@@ -18,7 +18,7 @@ function Queries() {
   if (error) return <p>Error!(</p>;
   return (
     <ul>
-      {data.uqeries.map(({ id, name }) => (
+      {data.queries.map(({ id, name }) => (
         <li key={id}>{name}</li>
       ))}
     </ul>

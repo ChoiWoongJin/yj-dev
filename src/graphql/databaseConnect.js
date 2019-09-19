@@ -14,6 +14,6 @@ const pool = mysql.createPool({
 });
 
 export const getDbPeople = async () => {
-    const [rows] = await pool.query("select * from user");
+    const [rows] = await pool.query("select * from testtable");
     return rows;
 };

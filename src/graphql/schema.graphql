@@ -11,6 +11,10 @@ type Test {
     name:String!
 }
 
+type Query {
+    ping: String
+}
+
 type Queries{
     getDbPeople: [Test]
 }
