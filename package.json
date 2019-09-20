@@ -12,6 +12,7 @@
     "graphql": "^14.5.6",
     "graphql-import": "^0.7.1",
     "graphql-tag": "^2.10.1",
+    "graphql-yoga": "^1.18.3",
     "install": "^0.13.0",
     "mysql2": "^1.7.0",
     "react": "^16.8.6",
@@ -21,7 +22,7 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts strat",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -34,5 +35,15 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "ProjectYJ",
+  "main": "index.js",
+  "repository": "https://github.com/ChoiWoongJin/yj-dev.git",
+  "author": "ChoiWoongJin <musi0436@naver.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1"
+  }
 }
