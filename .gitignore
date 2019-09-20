@@ -4,9 +4,7 @@
 /node_modules
 /src/graphql/node_modules
 /.pnp
-/src/graphql/.pnp
 .pnp.js
-/src/graphql/.pnp.js
 
 # testing
 /coverage
